@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Departments Management</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+body {
+background-image: url("images/care1.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+opacity: 9;
+};
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand bg-info navbar-info">
+<div class="container-fluid">
+<div class="navbar-header">
+<b>
+<span>
+<font color="Green" size="5">Health</font>
+<sub><font color="blue" size="8">+</font>
+<font color="Green" size="5">Care</font></sub>
+</span>
+</b>
+</div>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/adddepartment">AddDepartment</a></li>
+<li><a href="/departments">Services</a></li>
+<li><a href="#"> Sign Up</a></li>
+<li><a href="#"> Login</a></li>
+</ul>
+</div>
+</nav>
+<center><span style="background-color:black;" ><font color="white" >Total Appointments:</font><font color="yellow"><span th:text="*{totaltokens}"></span></font></span></center>
+</body>
+</html>
